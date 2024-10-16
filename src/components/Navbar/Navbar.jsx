@@ -12,9 +12,9 @@ function Navbar() {
                     <NavbarToggle />
                     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul className="navbar-nav mx-4" >
-                            <NavItem href="#hero" label="Hero"/>
-                            <Dropdown />
+                            <NavItem href="#hero" label="Home"/>
                             <NavItem href="#about" label="About"/>
+                            <Dropdown />
                             <NavItem href="#contact" label="Contact" />
                         </ul>
                     </div>
