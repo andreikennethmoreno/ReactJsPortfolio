@@ -16,7 +16,7 @@ function School() {
             link: "https://certificates.cs50.io/07cf8951-7096-4a72-9245-fcba75963f94.pdf?size=letter"
         },
         {
-            logoSrc: "https://w7.pngwing.com/pngs/306/302/png-transparent-udemy-hd-logo.png",
+            logoSrc: "https://freelogopng.com/images/all_img/1683006968udemy-icon-png.png",
             title: "WebDev Udemy",
             duration: "2/24 - 8/24",
             link: "https://udemy-certificate.s3.amazonaws.com/image/UC-39cc4dc6-2efe-4bb3-8903-c60993ba2cd7.jpg?v=1724748463000"
