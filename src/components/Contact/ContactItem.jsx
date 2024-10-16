@@ -10,7 +10,7 @@ function ContactItem({ icon, title, detail, link }) {
                 </b>
                 </p>
                 <a href={link} target="_blank" rel="noopener noreferrer" className="plink">
-                    <p className="fs-5 plink">
+                    <p className="fs-5 text-start plink">
                         {detail}
                     </p>
                 </a>
