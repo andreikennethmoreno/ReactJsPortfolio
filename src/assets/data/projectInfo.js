@@ -29,7 +29,7 @@ const projects = [
         description: 'A deployed full-stack app for sign-up and login, displaying all users upon signing in with JWT authentication and DaisyUI.',
         imgSrc: ShoutImg,
         codeLink: 'https://github.com/andreikennethmoreno/-jwt-deployment-pass.git',
-        demoLink: 'https://shoutout-smoky.vercel.app/login',
+        demoLink: 'https://shoutout-smoky.vercel.app/',
         technologies: ['Node', 'React', 'Postgre', 'Tailwind']
     },
     {
