@@ -17,7 +17,7 @@ function School() {
         },
         {
             logoSrc: "https://freelogopng.com/images/all_img/1683006968udemy-icon-png.png",
-            title: "WebDev Udemy",
+            title: "Webdev Udemy",
             duration: "View Certificate",
             link: "https://udemy-certificate.s3.amazonaws.com/image/UC-39cc4dc6-2efe-4bb3-8903-c60993ba2cd7.jpg?v=1724748463000"
         },
