@@ -1,18 +1,7 @@
 import React from 'react';
-import { LinkedInIcon, GithubIcon } from '../SubComponents/Icons';
+import socialLinks from "../../assets/data/personalInfo";
 
 function SocialLinks() {
-    const socialLinks = [
-        {
-            href: "https://example.com",
-            svg: <LinkedInIcon color="icon m-1" />,
-        },
-        {
-            href: "https://github.com/andreikennethmoreno",
-            svg: <GithubIcon color="icon m-1"/>,
-        }
-    ];
-
     return (
         <div>
             {socialLinks.map((link, index) => (
