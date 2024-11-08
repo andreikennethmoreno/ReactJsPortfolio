@@ -2,13 +2,8 @@ import PomoImg from  "../img/proj/pomodorify-thumb.png"
 import BookOwlImg from "../img/proj/bookowl-thumb.png"
 import GetMP3Img from "../img/proj/mp3-thumb.png"
 import ShoutImg from "../img/proj/Shoutout-thumb.png"
+import MoodImg from "..//img/proj/mood-thumb.png"
 
-// bOOK WHITE NODE
-// MP3 BlACKK NODE
-// PORTF WHITE REACT
-// CRYPTO BLACK NODE
-// NIKE WHITE DJANGO 
-// GEMBOT BLACK GODOT
 
 
 const projects = [
@@ -36,7 +31,7 @@ const projects = [
         id: 3,
         navId: "3",
         title: 'Pomodorify 🍅',
-        description: 'Task management app with React Countdown timers, Howler.js sound alerts, and DaisyUI styling.',
+        description: 'Task management app with React Countdown timers, Howler.js sound alerts, and DaisyUI styling. Deployed with Vercel',
         imgSrc: PomoImg,
         codeLink: 'https://github.com/andreikennethmoreno/Pomodorify.git',
         demoLink: 'https://pomodorifybydreikenn.netlify.app/',
@@ -46,11 +41,21 @@ const projects = [
         id: 4,
         navId: "4",
         title: 'GetMp3 🎶',
-        description: 'Download your favorite tracks effortlessly with our MP3 Downloader, powered by the YouTube API using ytdl-core and yt-search.>',
+        description: 'Download your favorite tracks effortlessly with our MP3 Downloader, powered by the YouTube API using ytdl-core and yt-search.',
         imgSrc: GetMP3Img,
         codeLink: 'https://github.com/andreikennethmoreno/GetMP3-Music',
         demoLink: 'https://drive.google.com/file/d/146yCIQo_V7a2oTLCIHD327O7Gxe8X_iT/view?usp=sharing',
         technologies: ['Node', 'EJS', 'API']
+    },
+    {
+        id: 5,
+        navId: "5",
+        title: 'Mood2Anime ⛩️',
+        description: "recommends anime based on the user's current mood, used Axios to connect with Jikan API. styled with DaisyUI. Deployed with Vercel",
+        imgSrc: MoodImg,
+        codeLink: 'https://github.com/andreikennethmoreno/Mood2Anime',
+        demoLink: 'https://mood2-anime.vercel.app/',
+        technologies: ['React', 'API', 'Tailwind']
     },
    
 ];

@@ -19,7 +19,7 @@ function ProjectCard({title , description , imgSrc , navId ,codeLink , demoLink,
                             <p className="card-text fs-5 ">{description}</p>
                             <div className="d-flex justify-content-center ">
                                 {technologies.map((tech, index) => (
-                                    <p key={index} className="fs-6 mb-0 me-2 plink p-3">{tech}</p>
+                                    <p key={index} className="fs-6 mb-0  plink p-3">{tech}</p>
                                 ))}
                             </div>
                             

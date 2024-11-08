@@ -35,7 +35,7 @@ function Contact() {
             id: 2,
             icon: <GmailIcon />,
             title: "Gmail",
-            detail: (<a onClick={sendEmail} className="plink">Send a message</a>),
+            detail: (<a onClick={sendEmail} className="plink">kennonirom@gmail.com</a>),
         },
         {
             id: 3,

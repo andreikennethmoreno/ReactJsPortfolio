@@ -1,8 +1,6 @@
 /*Navbar*/
-
-
 .nav-item, .navbar{
-  background-color: white !important;
+  background-color: white ;
   }
 
   #logo {
@@ -262,6 +260,7 @@
   .plink:hover{
     color: #1480fa !important;
   }
+
 
   .display-7{
     line-height: 2rem !important ;
