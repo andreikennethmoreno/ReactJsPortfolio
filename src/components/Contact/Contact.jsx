@@ -2,6 +2,7 @@ import Header from "../SubComponents/Header";
 import ContactItem from "./ContactItem";
 import MyResume from '../../assets/MyResume.pdf'; // Ensure this path is correct
 import { LocationIcon, GmailIcon, YoutubeIcon, ResumeIcon } from "../SubComponents/Icons";
+import ContactArea from "./ContactArea";
 
 function Contact() {
     const pdfFile = MyResume;
@@ -41,14 +42,14 @@ function Contact() {
             id: 3,
             icon: <YoutubeIcon />,
             title: "Youtube",
-            detail: "Kenn Onirom",
+            detail: "@KennOnirom",
             link: "https://www.youtube.com/@KennOnirom"
         },
         {
             id: 4,
             icon: <LocationIcon />,
             title: "Location",
-            detail: "Cavite Philippines",
+            detail: "Cavite, Philippines",
             link: "https://www.google.com/maps/place/Cavite/@13.865414,120.4799785,8.25z/data=!4m6!3m5!1s0x3397d4eae8163c71:0xf0c4d0843bdde727!8m2!3d14.2456329!4d120.8785658!16zL20vMDFmNnF3?entry=ttu&g_ep=EgoyMDI0MTAwOS4wIKXMDSoASAFQAw%3D%3D"
         },
     ];
@@ -58,6 +59,8 @@ function Contact() {
             <div className="about container col-xl-10 col-xxl-8 px-5 py-5 mt-5 start">
                 <div className="row flex-lg-row align-items-center g-lg-5 py-5">
                     <Header activeTitle="CONTACT" h2Title="Don't be shy! Hit me up! 👇"/>
+                    <ContactArea />
+
                     <div className="row px-5 align-items-start">
                         {contactData.map(item => (
                             <ContactItem

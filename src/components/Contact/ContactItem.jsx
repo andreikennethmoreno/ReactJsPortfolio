@@ -1,7 +1,7 @@
 function ContactItem({ icon, title, detail, link }) {
     return (
         <div className="col d-flex align-items-start mt-5">
-            <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center fs-4 flex-shrink-0 me-3">
+            <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center flex-shrink-0 me-3">
                 {icon}
             </div>
             <div>

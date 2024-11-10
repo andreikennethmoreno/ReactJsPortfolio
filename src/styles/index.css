@@ -299,3 +299,7 @@
   .buttonp{
     color: black !important;
   }
+
+  .form-control {
+    width: 100%;
+  }

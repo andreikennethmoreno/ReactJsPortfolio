@@ -8,7 +8,7 @@ function Footer() {
                 <footer className="d-flex flex-wrap justify-content-between align-items-center px-2 mt-2">
                     <div className="col-6 d-flex justify-content-start">
                         <p className="px-4 fs-6" style={{ color: 'white' }}><b>
-                            React JS + Bootstrap CSS
+                            React JS + Bootstrap CSS + Email JS
                         </b></p>
                     </div>
                     <div className="col-6 d-flex justify-content-end">
