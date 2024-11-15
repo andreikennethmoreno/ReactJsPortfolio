@@ -51,7 +51,7 @@ const projects = [
         id: 5,
         navId: "5",
         title: 'Mood2Anime ⛩️',
-        description: "Recommends anime based on yourr current mood, Axios to connect with Jikan API. styled with DaisyUI. Deployed with Vercel",
+        description: "Recommends anime based on your mood, connects to the Jikan API via Axios, styled with DaisyUI, and deployed on Vercel.",
         imgSrc: MoodImg,
         codeLink: 'https://github.com/andreikennethmoreno/Mood2Anime',
         demoLink: 'https://mood2-anime.vercel.app/',
