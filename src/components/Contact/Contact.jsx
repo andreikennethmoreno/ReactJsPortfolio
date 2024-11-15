@@ -36,7 +36,7 @@ function Contact() {
             id: 2,
             icon: <GmailIcon />,
             title: "Gmail",
-            detail: (<a onClick={sendEmail} className="plink">kennonirom@gmail.com</a>),
+            detail: (<a onClick={sendEmail} className="plink">kennonirom @gmail.com</a>),
         },
         {
             id: 3,
@@ -55,26 +55,30 @@ function Contact() {
     ];
 
     return (
-        <section className="off-white" id="contact">
-            <div className="about container col-xl-10 col-xxl-8 px-5 py-5 mt-5 start">
-                <div className="row flex-lg-row align-items-center g-lg-5 py-5">
-                    <Header activeTitle="CONTACT" h2Title="Don't be shy! Hit me up! 👇"/>
-                    <ContactArea />
+        <section  id="work">
+          <div className="about container col-xl-10 col-xxl-8 px-5">
+            <div className="row flex-lg-row align-items-start">
+              <Header 
+              activeTitle={"Cotact"}
+              h2Title={"Don't be shy! Hit me up! 👇"}/>
 
-                    <div className="row px-5 align-items-start">
-                        {contactData.map(item => (
-                            <ContactItem
-                                key={item.id}
-                                icon={item.icon}
-                                title={item.title}
-                                detail={item.detail}
-                                link={item.link} // Now this will render the button
-                            />
-                        ))}
-                    </div>
+            <ContactArea />
 
-                </div>
+            <div className="row px-5 align-items-start mb-5 pb-5">
+                {contactData.map(item => (
+                    <ContactItem
+                        key={item.id}
+                        icon={item.icon}
+                        title={item.title}
+                        detail={item.detail}
+                        link={item.link} // Now this will render the button
+                    />
+                ))}
             </div>
+
+
+            </div>      
+          </div>
         </section>
     );
 }

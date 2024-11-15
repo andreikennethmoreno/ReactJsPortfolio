@@ -30,7 +30,7 @@ function School() {
     ];
 
     return (
-        <div className="row my-5 flexed center-container px-3">
+        <div className="row my-5 flexed center-container ">
             {educationData.map((item, index) => (
                 <EducItem 
                     key={index}
