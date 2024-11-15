@@ -59,7 +59,7 @@ function Contact() {
           <div className="about container col-xl-10 col-xxl-8 px-5">
             <div className="row flex-lg-row align-items-start">
               <Header 
-              activeTitle={"Cotact"}
+              activeTitle={"Contact"}
               h2Title={"Don't be shy! Hit me up! 👇"}/>
 
             <ContactArea />
