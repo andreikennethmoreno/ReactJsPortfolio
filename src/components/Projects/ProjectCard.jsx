@@ -1,4 +1,13 @@
+import { useState } from 'react';
+
+
 function ProjectCard({title , description , imgSrc , navId ,codeLink , demoLink, technologies , className}) {
+    
+    const [showLightbox, setShowLightbox] = useState(false);
+
+    const handleShow = () => setShowLightbox(true);
+    const handleClose = () => setShowLightbox(false);
+    
     return (
         <>
         <div id={`proj${navId}`} style={{ marginBottom: '40px' }}></div>
@@ -8,7 +17,9 @@ function ProjectCard({title , description , imgSrc , navId ,codeLink , demoLink,
                     <div className={`row g-0 ${className}`}>
                         <div className="col-lg-7 col-12">
 
-                            <img src={imgSrc} className="round mt-2 img-fluid" alt="..."/>
+                            <img src={imgSrc} className="round mt-2 img-fluid" alt="..." 
+                            onClick={handleShow}
+                            style={{ cursor: 'pointer' }}/>
                         </div>
 
                         <div className="col-lg-5 col-12 px-4">
@@ -42,6 +53,49 @@ function ProjectCard({title , description , imgSrc , navId ,codeLink , demoLink,
                         </div>
                     </div>
                 </div>
+
+             {/* Lightbox Modal */}
+             {showLightbox && (
+                <div
+                    className="modal show d-block"
+                    tabIndex="-1"
+                    onClick={handleClose}
+                    style={{
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)', // Transparent black background
+                        position: 'fixed',
+                        top: 0,
+                        left: 0,
+                        width: '100%',
+                        height: '100%',
+                        zIndex: 1050, // Ensure modal is on top
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                    }}
+                >
+                    <div className="modal-dialog modal-dialog-centered" style={{ maxWidth: '90%' }}>
+                        <div className="modal-content bg-transparent border-0">
+                            <div className="modal-body p-0">
+                                {/* Enlarged Image */}
+                                <img
+                                    src={imgSrc}
+                                    alt="Project Full View"
+                                    className="img-fluid"
+                                    style={{ maxHeight: '90vh', width: 'auto' }}
+                                />
+                            </div>
+                            {/* Close Button */}
+                            <button
+                                type="button"
+                                className="btn-close position-absolute top-0 end-0 m-3"
+                                aria-label="Close"
+                                onClick={handleClose}
+                                style={{ filter: 'invert(1)' }} // Makes the close button white
+                            ></button>
+                        </div>
+                    </div>
+                </div>
+            )}
         </>
     )
 }
